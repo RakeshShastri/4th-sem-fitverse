@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fullsend</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+  <body>
+    <!-- home css style -->
+    <link rel="stylesheet" href="sign-up.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <nav class="navbar navbar-expand-md nav-menu navbar-light bg-light sticky-top" >
+    
+    <a class="navbar-brand noline" href="/index.html"><img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding: 5px;"></a>
+    
+    <button class="navbar-toggler noline" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapse_target" style="border-bottom: no;">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  ">
+            <a class="nav-link " href="/index.html"> HOME </a>
+        </li>
+          <li class="nav-item ">
+              <a class="nav-link " href="/workouts.html">   WORKOUTS </a>
+          </li>
+
+          <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="#drills_drop" href="#"> 
+             DRILLS
+             <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu " aria-labelledby="drills_drop">
+                <a class="dropsown-item noline" href="/drills/drill_hiit.html" style="text-decoration: none;">HIIT</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropsown-item noline" href="/drills/drill_wt.html" style="text-decoration: none;">Weight Training</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropsown-item noline" href="/drills/drill_yoga.html" style="text-decoration: none;">Yoga</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropsown-item noline" href="/drills/drill_calis.html" style="text-decoration: none;">Calisthenics</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropsown-item noline" href="/drills/drill_abs.html" style="text-decoration: none;">Abs</a>
+                
+            </div>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#collec_drop" href="#"> 
+            SPORTS
+            <span class="caret"></span>
+           </a>
+           <div class="dropdown-menu" aria-labelledby="collec_drop">
+            <a class="dropsown-item noline" href="/sports/foot.html" style="text-decoration: none;">Football</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropsown-item noline" href="/sports/basket.html" style="text-decoration: none;">Basketball</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropsown-item noline" href="/sports/cric.html" style="text-decoration: none; ">Cricket</a>
+        </div>
+          </li>
+          
+         <li></li>
+     </ul>
+     <a href="/login/login-page.html" class="login-btn scrollto" style="text-decoration: none;">LOG IN</a>
+    </div>
+  </nav>
+
+
+
+
+  <section class="Form mt-5">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-5 ">
+          <img src="/images/svg/login/indoor_bike.svg" style="height: 500px;" class="img-fluid login-image" alt="">
+        </div>
+        <div class="col-lg-7 px-5 pt-5">
+          <img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding-bottom: 20px;">
+          <h4>Create a New Account</h4>
+          <form method="post", action = "/SignUpForm">
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="text" placeholder="Name" class="form-control mt-3 mb-1 p-4 " id="name" name = "name">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="email" placeholder="E-mail" class="form-control mt-1 mb-1 p-4" id="email" name = "email">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="number" placeholder="Phone" class="form-control mt-1 mb-1 p-4" id="phone" name = "phone">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="password" placeholder="Password" class="form-control mt-1 mb-1 p-4">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="password" placeholder="Re-enter Password" class="form-control mt-1 mb-4 p-4">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-7">
+                <button type="submit" class="btn2 mb-3">Sign up</button>
+              </div>
+            </div>
+            <p style="text-decoration-color: #FF4433;">Already have an account?  <a href="login-page.html">Log in here </a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </body>
+  </html>

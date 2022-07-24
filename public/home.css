@@ -1,0 +1,207 @@
+.send{
+    height: 80px;
+    margin-left: 5px;
+}
+.listen{
+    font-size: 25px;
+}
+
+/*the text inside image*/
+.try-me{
+    color: white;
+}
+.parallax-image1{
+    background-image: url("/images/hiit.jpg");
+    height: 600px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-image2{
+    background-image: url("/images/weight_training.jpg");
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-image3{
+    background-image: url("/images/yoga.jpg");
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-image4{
+    background-image: url("/images/calisthenics.jpg");
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-image5{
+    background-image: url("/images/abs.jpg");
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* responsible for the black color of navbar*/
+.nav-menu{
+    background:black;
+    box-shadow: 0px 2px 5px #282828;
+}
+ /*Responsible for the text inside the navbar*/
+.nav-menu a {
+	display: block;
+	position: relative;
+	color: black;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0px 5px !important;
+    border-bottom: 2px solid transparent;
+}
+.noline{
+    border-bottom: none !important;
+}
+.nav-menu a:hover{
+    border-bottom: 2px solid #FF4433;
+}
+.active a{
+    border-bottom: 2px solid #FF4433;
+}
+:active a:hover{
+    border-bottom: none !important;
+}
+.collapse {
+    border-bottom: none !important;
+}
+
+.dropdown-menu{
+    text-align: left; 
+    padding: 3px 6px;
+    height: fit-content;
+}
+.dropdown-item{
+    background: black;
+}
+.under{
+    text-decoration: none;
+}
+.navbar-collapse{
+    align-content: right;
+    border-bottom: 5px !important;
+}
+.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-item{
+    font-size: 20px;
+    padding: 7px 0px;
+}
+
+.pop{
+    color: azure;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+
+/* Login button */
+.login-btn {
+    position: relative;
+	margin:10px;
+	color: white;
+	border-radius:4px;
+	padding:0px 0px 0px 25px;
+	white-space: nowrap;
+	transition: 0.3s;
+	font-size: 13px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: 2px solid #FF4433 !important;
+    width: 68px;
+    text-decoration: none;
+}
+
+/*hover effect of button*/
+.login-btn:hover {
+	background: #FF4433;
+	color:white;
+}
+
+/* popular programs*/
+#popular {
+    background-image: url("/images/popular.jpg");
+    height: auto;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#popular h1{
+    font-weight: 600;
+    font-size: 40px;
+    padding-top: 90px; ;
+    padding-bottom: 60px;
+    color: azure;
+}
+.title{
+    text-align: center;
+    padding-left: 25px 0px;
+}
+
+.card-title{
+    padding: 0px 0px;
+}
+.card{
+    box-shadow: 5px 5px 2px;
+    border: transparent;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+.card:hover {
+    box-shadow: 10px 10px 5px #FF4433;
+}
+.trans{
+    color: transparent !important;
+    padding-bottom: 90px !important;
+}
+.btn1{
+    height: 45px;
+    width: 30%;
+    border: 3px solid #FF4433;
+    background-color:#FF4433;
+    color: azure ;
+    outline: #FF4433;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 60px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    box-shadow: 10px 7px rgba(0,0,0,0.1);
+}
+
+

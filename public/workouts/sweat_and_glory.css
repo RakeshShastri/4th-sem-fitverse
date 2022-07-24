@@ -1,0 +1,107 @@
+.send{
+    height: 80px;
+    margin-left: 5px;
+}
+.listen{
+    font-size: 25px;
+}
+
+/*the text inside image*/
+.try-me{
+    color: white;
+}
+body{
+    background: url("/images/svg/login/undraw_stability_ball_b-4-ia.svg");
+    height: auto;
+    background-attachment: fixed;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* responsible for the black color of navbar*/
+.nav-menu{
+    background:black;
+    box-shadow: 0px 2px 5px #282828;
+}
+ /*Responsible for the text inside the navbar*/
+.nav-menu a {
+	display: block;
+	position: relative;
+	color: black;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 0px 5px !important;
+    border-bottom: 2px solid transparent;
+}
+.noline{
+    border-bottom: none !important;
+}
+.nav-menu a:hover{
+    border-bottom: 2px solid #FF4433;
+}
+.active a{
+    border-bottom: 2px solid #FF4433;
+}
+:active a:hover{
+    border-bottom: none !important;
+}
+.collapse {
+    border-bottom: none !important;
+}
+
+.dropdown-menu{
+    text-align: left; 
+    padding: 3px 6px;
+    height: fit-content;
+}
+.dropdown-item{
+    background: black;
+}
+.under{
+    text-decoration: none;
+}
+.navbar-collapse{
+    align-content: right;
+    border-bottom: 5px !important;
+}
+.nav-link{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-item{
+    font-size: 20px;
+    padding: 7px 0px;
+}
+
+.pop{
+    color: azure;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+
+/* Login button */
+.login-btn {
+    position: relative;
+	margin:10px;
+	color: white;
+	border-radius:4px;
+	padding:0px 0px 0px 25px;
+	white-space: nowrap;
+	transition: 0.3s;
+	font-size: 13px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: 2px solid #FF4433 !important;
+    width: 68px;
+    text-decoration: none;
+}
+
+/*hover effect of button*/
+.login-btn:hover {
+	background: #FF4433;
+	color:white;
+}
