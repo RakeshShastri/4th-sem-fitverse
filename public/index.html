@@ -18,7 +18,55 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+    <script>
+        var loginDetails
+        fetch('http://localhost:8080/checkLogin')
+        .then((response) => response.json())
+        .then((data) => checkLoggedIn(data));
+        checkLoggedIn = (logincheck) => {
+            if(logincheck.isLoggedIn) {
+                getLoginDetails();
+            } else console.log("false");
+        }
+        getLoginDetails = () => {
+            fetch('http://localhost:8080/getLoginDetails')
+            .then((response) => response.json())
+            .then((logindata) => changeLoginBttn(logindata));
+            
+        }
+        changeLoginBttn = (loginData) => {
+            const bttn = document.getElementById('loginbttn');
+            var accBttn = document.createElement('li');
+            accBttn.className = "nav-item dropdown";
+            
+
+            var toggle = document.createElement('a');
+            toggle.setAttribute("data-toggle","dropdown");
+            toggle.innerText = loginData.username;
+
+            var listDiv = document.createElement('div');
+            listDiv.className = "dropdown-menu"
+            listDiv.ariaLabel = "acc_drop";
+
+            var accBttnList1 = document.createElement('a');
+            accBttnList1.className = "dropsown-item noline";
+            accBttnList1.href = "/LogOut";
+            accBttnList1.innerText = "Logout";
+
+            var span = document.createElement('span');
+            span.className= "caret";
+
+            listDiv.appendChild(accBttnList1);
+            accBttn.appendChild(toggle);
+            accBttn.appendChild(span);
+            accBttn.appendChild(listDiv);
+
+            
+            bttn.replaceWith(accBttn);
+        }
+        
+    </script>
+
   <nav class="navbar navbar-expand-md nav-menu navbar-light bg-light sticky-top" >
     
     <a class="navbar-brand noline" href="index.html"><img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding: 5px;"></a>
@@ -72,7 +120,7 @@
           
           <li></li>
       </ul>
-      <a href="/login/login-page.html" class="login-btn scrollto" style="text-decoration: none;">LOG IN</a>
+      <a href="/login/login-page.html" class="login-btn scrollto" style="text-decoration: none;" id = "loginbttn">LOG IN</a>
     </div>
   </nav>
 

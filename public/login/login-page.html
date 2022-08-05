@@ -89,20 +89,20 @@
         <div class="col-lg-7 px-5 pt-5">
           <img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding-bottom: 20px;">
           <h4>Log into your account</h4>
-          <form>
+          <form method="post", action = "/auth">
             <div class="form-row">
               <div class="col-lg-7">
-                <input type="email" placeholder="E-mail address" class="form-control mt-3 mb-1 p-4 ">
+                <input type="email" placeholder="E-mail address" class="form-control mt-3 mb-1 p-4 " name = "username" name = "username">
               </div>
             </div>
             <div class="form-row">
               <div class="col-lg-7">
-                <input type="password" placeholder="Password" class="form-control mt-1 mb-4 p-4">
+                <input type="password" placeholder="Password" class="form-control mt-1 mb-4 p-4" name = "password" name = "password">
               </div>
             </div>
             <div class="form-row">
               <div class="col-lg-7">
-                <button type="button" class="btn2 mb-3">Login</button>
+                <button type="submit" class="btn2 mb-3">Login</button>
               </div>
             </div>
             <p style="text-decoration-color: #FF4433;">Don't have an account?  <a href="sign-up.html">Register here </a></p>
