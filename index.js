@@ -45,6 +45,17 @@ app.post("/SignUpForm", (req, res) => {
     
 })
 
+//API to get Workout Data from db and send it to frontend
+app.get("/getWorkoutData", (req, res) => {
+  var type = req.query.type;
+  var sql = `SELECT * FROM data WHERE cat = "${type}"`;
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
+  
+});
+
 app.listen(port, () => {
     console.log(`The application started 
     successfully on port ${port}`);
