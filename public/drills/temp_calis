@@ -1,0 +1,218 @@
+<div class="row mt-3">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Barbell Squats</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Barbel_Squat.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 4 <br><br>Reps: 20</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Leg Press</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Leg_Press.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 4 <br><br>Reps: 10</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Leg Extensions</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Leg_Extension.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 5  <br><br>Reps: 25</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+
+  
+  <div class="row my-5">
+    <div class="col-12">
+      <div class="card shadow mg-b-20 mg-lg-b-25">
+        <div class="card-header" style = "background-color: #FF4433;">
+            <div class="row">
+              <div class="col-6">
+                  <h6 class="m-0 font-weight-bold text-white">Arm String</h6>
+              </div>
+              <div class="col-6 text-right">
+                   
+              </div>
+            </div>
+        </div>
+      <div class="card-body pd-20 pd-lg-25">
+        <div class="row g-0">
+          <div class="col md-4">
+            <img src="/drills/Gif/Arm_string.gif" style="width: 400px; height: auto; margin: 28px;"/>
+          </div>
+          <div class = "col md-8">
+            <p>Sets: 6<br><br>Reps:  15</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row my-5">
+    <div class="col-12">
+      <div class="card shadow mg-b-20 mg-lg-b-25">
+        <div class="card-header" style = "background-color: #FF4433;">
+            <div class="row">
+              <div class="col-6">
+                  <h6 class="m-0 font-weight-bold text-white">Weighted Calf Raises</h6>
+              </div>
+              <div class="col-6 text-right">
+                   
+              </div>
+            </div>
+        </div>
+      <div class="card-body pd-20 pd-lg-25">
+        <div class="row g-0">
+          <div class="col md-4">
+            <img src="/drills/Gif/Weighted_calf.gif" style="width: 400px; height: auto; margin: 28px;"/>
+          </div>
+          <div class = "col md-8">
+            <p>Sets: 4<br> <br>Reps: 20</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Lat Pull Down</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Lat_PullDown.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 5<br> <br>Reps: 20</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="card shadow mg-b-20 mg-lg-b-25">
+            <div class="card-header" style = "background-color: #FF4433;">
+                <div class="row">
+                  <div class="col-6">
+                      <h6 class="m-0 font-weight-bold text-white">Dead Lift</h6>
+                  </div>
+                  <div class="col-6 text-right">
+                       
+                  </div>
+                </div>
+            </div>
+          <div class="card-body pd-20 pd-lg-25">
+            <div class="row g-0">
+              <div class="col md-4">
+                <img src="/drills/Gif/Dead_Lift.gif" style="width: 400px; height: auto; margin: 28px;"/>
+              </div>
+              <div class = "col md-8">
+                <p>Sets: 5<br> <br>Reps: 20</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row my-5">
+          <div class="col-12">
+            <div class="card shadow mg-b-20 mg-lg-b-25">
+              <div class="card-header" style = "background-color: #FF4433;">
+                  <div class="row">
+                    <div class="col-6">
+                        <h6 class="m-0 font-weight-bold text-white">Skull Crushers</h6>
+                    </div>
+                    <div class="col-6 text-right">
+                         
+                    </div>
+                  </div>
+              </div>
+            <div class="card-body pd-20 pd-lg-25">
+              <div class="row g-0">
+                <div class="col md-4">
+                  <img src="/drills/Gif/Skull_Crushers.gif" style="width: auto; height: 200px; margin: 28px;"/>
+                </div>
+                <div class = "col md-8">
+                  <p>Sets: 4 <br><br>Reps: 25</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+
+  
+    
+  </div>
+  </div>

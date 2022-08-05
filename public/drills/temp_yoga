@@ -1,0 +1,215 @@
+<div class="row mt-3">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">SALUTATION POSES</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Suryanamskara.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 4 <br><br>Reps: 20</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">LOTUS POSTURE</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Padmasana.gif" style="width: auto; height: 300px; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 3 <br><br>Reps: 15</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">THUNDERBOLT OR DIAMOND POSTURE</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Vajrasana.gif" style="width: auto; height: 300px; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 3  <br><br>Reps: 20</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+
+  
+  <div class="row my-5">
+    <div class="col-12">
+      <div class="card shadow mg-b-20 mg-lg-b-25">
+        <div class="card-header" style = "background-color: #FF4433;">
+            <div class="row">
+              <div class="col-6">
+                  <h6 class="m-0 font-weight-bold text-white">BOW POSTURE</h6>
+              </div>
+              <div class="col-6 text-right">
+                   
+              </div>
+            </div>
+        </div>
+      <div class="card-body pd-20 pd-lg-25">
+        <div class="row g-0">
+          <div class="col md-4">
+            <img src="/drills/Gif/Dhanurasana.gif" style="width: 400px; height: auto; margin: 28px;"/>
+          </div>
+          <div class = "col md-8">
+            <p>Sets: 4<br><br>Reps:  20</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row my-5">
+    <div class="col-12">
+      <div class="card shadow mg-b-20 mg-lg-b-25">
+        <div class="card-header" style = "background-color: #FF4433;">
+            <div class="row">
+              <div class="col-6">
+                  <h6 class="m-0 font-weight-bold text-white">WHEEL POSTURE</h6>
+              </div>
+              <div class="col-6 text-right">
+                   
+              </div>
+            </div>
+        </div>
+      <div class="card-body pd-20 pd-lg-25">
+        <div class="row g-0">
+          <div class="col md-4">
+            <img src="/drills/Gif/Chakrasana.gif" style="width: auto; height: 300px; margin: 28px;"/>
+          </div>
+          <div class = "col md-8">
+            <p>Sets: 6<br> <br>Reps: 20</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">PLOW POSTURE</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Halasaasana.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 6<br> <br>Reps: 15</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="card shadow mg-b-20 mg-lg-b-25">
+            <div class="card-header" style = "background-color: #FF4433;">
+                <div class="row">
+                  <div class="col-6">
+                      <h6 class="m-0 font-weight-bold text-white">TRIANGLE POSE</h6>
+                  </div>
+                  <div class="col-6 text-right">
+                       
+                  </div>
+                </div>
+            </div>
+          <div class="card-body pd-20 pd-lg-25">
+            <div class="row g-0">
+              <div class="col md-4">
+                <img src="/drills/Gif/Trikonasana.gif" style="width: 400px; height: auto; margin: 28px;"/>
+              </div>
+              <div class = "col md-8">
+                <p>Sets: 5<br> <br>Reps: 10</p> 
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <div class="row my-5">
+          <div class="col-12">
+            <div class="card shadow mg-b-20 mg-lg-b-25">
+              <div class="card-header" style = "background-color: #FF4433;">
+                  <div class="row">
+                    <div class="col-6">
+                        <h6 class="m-0 font-weight-bold text-white">SHOULDER STAND POSTURE</h6>
+                    </div>
+                    <div class="col-6 text-right">
+                         
+                    </div>
+                  </div>
+              </div>
+            <div class="card-body pd-20 pd-lg-25">
+              <div class="row g-0">
+                <div class="col md-4">
+                  <img src="/drills/Gif/Srvangaasan.gif" style="width: auto; height: 300px; margin: 28px;"/>
+                </div>
+                <div class = "col md-8">
+                  <p>Sets: 5<br> <br>Reps: 10</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
+  </div>
+

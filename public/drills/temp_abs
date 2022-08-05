@@ -1,0 +1,215 @@
+<div class="row mt-3">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Flutter Kicks</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Flutter_Kicks.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets:  4 <br><br>Reps: 20</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    <div class="row my-5">
+      <div class="col-12">
+        <div class="card shadow mg-b-20 mg-lg-b-25">
+          <div class="card-header" style = "background-color: #FF4433;">
+              <div class="row">
+                <div class="col-6">
+                    <h6 class="m-0 font-weight-bold text-white">Elbow Plank</h6>
+                </div>
+                <div class="col-6 text-right">
+                     
+                </div>
+              </div>
+          </div>
+        <div class="card-body pd-20 pd-lg-25">
+          <div class="row g-0">
+            <div class="col md-4">
+              <img src="/drills/Gif/Elbow _Plank.gif" style="width: 400px; height: auto; margin: 28px;"/>
+            </div>
+            <div class = "col md-8">
+              <p>Sets: 4<br><br>Reps:  20 </p> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="row my-5">
+        <div class="col-12">
+          <div class="card shadow mg-b-20 mg-lg-b-25">
+            <div class="card-header" style = "background-color: #FF4433;">
+                <div class="row">
+                  <div class="col-6">
+                      <h6 class="m-0 font-weight-bold text-white">L Sift</h6>
+                  </div>
+                  <div class="col-6 text-right">
+                       
+                  </div>
+                </div>
+            </div>
+          <div class="card-body pd-20 pd-lg-25">
+            <div class="row g-0">
+              <div class="col md-4">
+                <img src="/drills/Gif/L_Sit.gif" style="width: 400px; height: auto; margin: 28px;"/>
+              </div>
+              <div class = "col md-8">
+                <p>Sets: 4 <br><br>Reps: 20</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="row my-5">
+          <div class="col-12">
+            <div class="card shadow mg-b-20 mg-lg-b-25">
+              <div class="card-header" style = "background-color: #FF4433;">
+                  <div class="row">
+                    <div class="col-6">
+                        <h6 class="m-0 font-weight-bold text-white">Star Plank</h6>
+                    </div>
+                    <div class="col-6 text-right">
+                         
+                    </div>
+                  </div>
+              </div>
+            <div class="card-body pd-20 pd-lg-25">
+              <div class="row g-0">
+                <div class="col md-4">
+                  <img src="/drills/Gif/Star_Plank.gif" style="width: 400px; height: auto; margin: 28px;"/>
+                </div>
+                <div class = "col md-8">
+                  <p>Sets: 4  <br><br>Reps: 20</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row my-5">
+            <div class="col-12">
+              <div class="card shadow mg-b-20 mg-lg-b-25">
+                <div class="card-header" style = "background-color: #FF4433;">
+                    <div class="row">
+                      <div class="col-6">
+                          <h6 class="m-0 font-weight-bold text-white">Hollow Hold</h6>
+                      </div>
+                      <div class="col-6 text-right">
+                           
+                      </div>
+                    </div>
+                </div>
+              <div class="card-body pd-20 pd-lg-25">
+                <div class="row g-0">
+                  <div class="col md-4">
+                    <img src="/drills/Gif/Hollow_Hold.gif" style="width: 400px; height: auto; margin: 28px;"/>
+                  </div>
+                  <div class = "col md-8">
+                    <p>Sets: 5<br><br>Reps: 20</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row my-5">
+              <div class="col-12">
+                <div class="card shadow mg-b-20 mg-lg-b-25">
+                  <div class="card-header" style = "background-color: #FF4433;">
+                      <div class="row">
+                        <div class="col-6">
+                            <h6 class="m-0 font-weight-bold text-white">V Ups</h6>
+                        </div>
+                        <div class="col-6 text-right">
+                             
+                        </div>
+                      </div>
+                  </div>
+                <div class="card-body pd-20 pd-lg-25">
+                  <div class="row g-0">
+                    <div class="col md-4">
+                      <img src="/drills/Gif/V_Ups.gif" style="width: 400px; height: auto; margin: 28px;"/>
+                    </div>
+                    <div class = "col md-8">
+                      <p>Sets: 6 <br><br>Reps: 20</p> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row my-5">
+                <div class="col-12">
+                  <div class="card shadow mg-b-20 mg-lg-b-25">
+                    <div class="card-header" style = "background-color: #FF4433;">
+                        <div class="row">
+                          <div class="col-6">
+                              <h6 class="m-0 font-weight-bold text-white">Climber Tapes</h6>
+                          </div>
+                          <div class="col-6 text-right">
+                               
+                          </div>
+                        </div>
+                    </div>
+                  <div class="card-body pd-20 pd-lg-25">
+                    <div class="row g-0">
+                      <div class="col md-4">
+                        <img src="/drills/Gif/Climber_Tapes.gif" style="width: 400px; height: auto; margin: 28px;"/>
+                      </div>
+                      <div class = "col md-8">
+                        <p>Sets: 6<br><br>Reps:  10 </p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row my-5">
+                  <div class="col-12">
+                    <div class="card shadow mg-b-20 mg-lg-b-25">
+                      <div class="card-header" style = "background-color: #FF4433;">
+                          <div class="row">
+                            <div class="col-6">
+                                <h6 class="m-0 font-weight-bold text-white">Plank Roles</h6>
+                            </div>
+                            <div class="col-6 text-right">
+                                 
+                            </div>
+                          </div>
+                      </div>
+                    <div class="card-body pd-20 pd-lg-25">
+                      <div class="row g-0">
+                        <div class="col md-4">
+                          <img src="/drills/Gif/Plank_Roles.gif" style="width: 400px; height: auto; margin: 28px;"/>
+                        </div>
+                        <div class = "col md-8">
+                          <p>Sets: 6<br><br>Reps:  20 </p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+   
+  
+      
+  </div>
+  </div>
+  <!--</div>-->  
