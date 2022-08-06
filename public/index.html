@@ -53,10 +53,17 @@
             accBttnList1.href = "/LogOut";
             accBttnList1.innerText = "Logout";
 
+            var accBttnList2 = document.createElement('a');
+            accBttnList2.className = "dropsown-item noline";
+            accBttnList2.href = "/login_forms.html";
+            accBttnList2.innerText = "Fitness Details";
+
+
             var span = document.createElement('span');
             span.className= "caret";
 
             listDiv.appendChild(accBttnList1);
+            listDiv.appendChild(accBttnList2);
             accBttn.appendChild(toggle);
             accBttn.appendChild(span);
             accBttn.appendChild(listDiv);

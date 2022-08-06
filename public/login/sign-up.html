@@ -89,25 +89,25 @@
         <div class="col-lg-7 px-5 pt-5">
           <img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding-bottom: 20px;">
           <h4>Create a New Account</h4>
-          <form>
+          <form method="post" action="/SignUpForm">
             <div class="form-row">
               <div class="col-lg-7">
-                <input type="text" placeholder="Name" class="form-control mt-3 mb-1 p-4 ">
+                <input type="text" placeholder="Name" class="form-control mt-3 mb-1 p-4 " id="name" name = "name">
               </div>
             </div>
             <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="email" placeholder="E-mail" class="form-control mt-1 mb-1 p-4">
+                  <input type="email" placeholder="E-mail" class="form-control mt-1 mb-1 p-4" id="email" name = "email">
                 </div>
               </div>
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="number" placeholder="Phone" class="form-control mt-1 mb-1 p-4">
+                  <input type="number" placeholder="Phone" class="form-control mt-1 mb-1 p-4" id="phone" name = "phone">
                 </div>
               </div>
             <div class="form-row">
               <div class="col-lg-7">
-                <input type="password" placeholder="Password" class="form-control mt-1 mb-1 p-4">
+                <input type="password" placeholder="Password" class="form-control mt-1 mb-1 p-4" id = "password" name = "password"> 
               </div>
             </div>
             <div class="form-row">
@@ -117,7 +117,7 @@
             </div>
             <div class="form-row">
               <div class="col-lg-7">
-                <button type="button" class="btn2 mb-3">Sign up</button>
+                <button type="submit" class="btn2 mb-3">Sign up</button>
               </div>
             </div>
             <p style="text-decoration-color: #FF4433;">Already have an account?  <a href="login-page.html">Log in here </a></p>

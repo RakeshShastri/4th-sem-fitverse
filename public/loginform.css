@@ -1,0 +1,208 @@
+form {
+    width: 600px;
+    height: 400px;
+}
+
+input{
+    width: 75%;
+    padding: 12px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  
+  }
+  .col-25 {
+    font-style: normal;
+    color: #094369;
+    width: 25%;
+    margin-top: 6px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 5px;
+  }
+
+  .col-75 {
+    
+    align-content: right;
+    text-align: right;
+    width: 70%;
+    margin-top: 6px;
+   
+  }
+
+.button1{
+  display: inline-block;
+  background-color: darkred;
+  border-radius: 10px;
+  color:black;
+  text-align: center;
+  font-size: 28px;
+   margin: 5px;
+   align-content: space-around;
+  bottom:0%;
+  position: absolute;
+}
+
+.button2{ 
+    position: absolute;
+    right: 70px;
+    background-color: green;
+    border-radius: 10px;
+    color:black;
+    text-align: center;
+    font-size: 28px;
+     margin: 5px;
+    bottom: 0%;
+  }
+
+
+  h1{
+     color: #094369;
+    font-weight: bolder;
+
+  }
+
+  .bg-img {
+ 
+    background-image: url("bg_image.svg");
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: 60%;
+  }
+
+
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  
+}
+
+.row2 [class="col-25"]{
+  position: absolute;
+  right: 10%;
+}
+
+.row2 [class="col-75"]
+{
+  position: absolute;
+   right: 0%;
+   width: 500px;
+}
+
+.row4 [class="col-25"]{
+  position: absolute;
+  right: 10%;
+}
+
+
+.row4 [class="col-75"]
+{
+  position: absolute;
+   right: 0%;
+   width: 500px;
+}
+
+.row6 [class= "col-25" ]{
+  position: absolute;
+  right: 10%;
+}
+
+.row6 [class="col-75"]
+{
+  position: absolute;
+  right: 0%;
+  width: 500px;
+}
+
+.nav-menu{
+  background:black;
+  box-shadow: 0px 2px 5px #282828;
+}
+/*Responsible for the text inside the navbar*/
+.nav-menu a {
+display: block;
+position: relative;
+color: black;
+font-size: 17px;
+font-weight: 500;
+padding: 0px 5px !important;
+  border-bottom: 2px solid transparent;
+}
+.noline{
+  border-bottom: none !important;
+}
+.nav-menu a:hover{
+  border-bottom: 2px solid #FF4433;
+}
+.active a{
+  border-bottom: 2px solid #FF4433;
+}
+:active a:hover{
+  border-bottom: none !important;
+}
+.collapse {
+  border-bottom: none !important;
+}
+
+.dropdown-menu{
+  text-align: left; 
+  padding: 3px 6px;
+  height: fit-content;
+}
+.dropdown-item{
+  background: black;
+}
+.under{
+  text-decoration: none;
+}
+.navbar-collapse{
+  align-content: right;
+  border-bottom: 5px !important;
+}
+.nav-link{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.nav-item{
+  font-size: 20px;
+  padding: 7px 0px;
+}
+
+.pop{
+  color: azure;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+
+/* Login button */
+.login-btn {
+  position: relative;
+margin:10px;
+color: white;
+border-radius:4px;
+padding:0px 0px 0px 25px;
+white-space: nowrap;
+transition: 0.3s;
+font-size: 13px;
+display: inline-block;
+text-transform: uppercase;
+font-weight: 400;
+border: 2px solid #FF4433 !important;
+  width: 68px;
+  text-decoration: none;
+}
+
+/*hover effect of button*/
+.login-btn:hover {
+background: #FF4433;
+color:white;
+}

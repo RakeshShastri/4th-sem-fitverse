@@ -22,8 +22,9 @@ var con = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "test"
+  database: "fitverse"
 });
+
 
 app.use(express.json());
 
@@ -36,7 +37,7 @@ app.post('/auth', function(request, response) {
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
-		con.query('SELECT * FROM accounts WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
+		con.query('SELECT * FROM credentials WHERE email = ? AND password = ?', [username, password], function(error, results, fields) {
 			// If there is an issue with the query, output the error
 			if (error) throw error;
 			// If the account exists
@@ -90,24 +91,49 @@ app.get("/", (req, res) => {
 app.post("/SignUpForm", (req, res) => {
     console.log(req.body.name);
     console.log(req.body.email);
-    console.log(req.body.phone);
+    console.log(req.body.phone)
+    console.log(req.body.password);
 
-    con.connect(function(err) {
-        if (err) throw err;
-        console.log("Connected!");
-        var sql = `INSERT INTO test VALUES ('${req.body.name}', '${req.body.email}', '${req.body.phone}' )`;
-        con.query(sql, function (err, result) {
+    
+        var creds = `INSERT INTO credentials VALUES ('${req.body.email}', '${req.body.password}')`;
+        var userDetails = `INSERT INTO user_details VALUES ('${req.body.email}','${req.body.name}','${req.body.phone}', 0)`;
+        con.query(creds, function (err, result) {
           if (err) throw err;
           console.log("1 record inserted");
         });
-      });
+        con.query(userDetails, function (err, result) {
+          if (err) throw err;
+          console.log("1 record inserted");
+        });
+     
+      return res.redirect('/login/login-page.html');
     
 })
+
+app.post("/putFitnessData", (req, res) => {
+  var username = req.session.username;
+  console.log(req.body.username);
+  var calories = req.body.Daily_calories;
+  var frequency = req.body.Workout_Frequency;
+  var height = req.body.Height;
+  var weight = req.body.Weight;
+  var bmi = req.body.bmi
+  var health = req.body.Health_Conditions;
+
+  var fdetails = `INSERT INTO fitness_data values('${username}','${calories}','${frequency}','${height}','${weight}','${bmi}','${health}')`;
+ 
+  con.query(fdetails, function (err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
+  });
+  res.send("Details Updated");
+});
+
 
 //API to get Workout Data from db and send it to frontend
 app.get("/getWorkoutData", (req, res) => {
   var type = req.query.type;
-  var sql = `SELECT * FROM data WHERE cat = "${type}"`;
+  var sql = `SELECT * FROM content WHERE cat = "${type}"`;
   con.query(sql, function (err, result) {
     if (err) throw err;
     res.send(result);

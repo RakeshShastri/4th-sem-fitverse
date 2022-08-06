@@ -1,4 +1,4 @@
-fetch('http://localhost:8080/getWorkoutData?type=HIIT')
+fetch('http://localhost:8080/getWorkoutData?type=hiit')
 .then((response) => response.json())
 .then((data) => createCards(data));
 
