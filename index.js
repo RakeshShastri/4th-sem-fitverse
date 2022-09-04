@@ -48,6 +48,7 @@ app.post('/auth', function(request, response) {
 				// Redirect to home page
 				response.redirect('/index.html');
 			} else {
+        console.log('Incorrect Username and/or Password!')
 				response.send('Incorrect Username and/or Password!');
 			}			
 			response.end();
@@ -130,6 +131,22 @@ app.post("/putFitnessData", (req, res) => {
 });
 
 
+//Add workouts
+app.post('/putWorkout', (req, res) => {
+
+  var fdetails = `INSERT INTO content values('${req.session.username}','${req.body.WorkoutName}','${req.body.GIFPath}','${req.body.Sets}','${req.body.Reps}','${req.body.rdbCategory}')`;
+
+  con.query(fdetails, function (err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
+  });
+  
+  res.redirect('/drills/drills_user.html')
+
+  
+});
+
+
 //API to get Workout Data from db and send it to frontend
 app.get("/getWorkoutData", (req, res) => {
   var type = req.query.type;
@@ -139,6 +156,86 @@ app.get("/getWorkoutData", (req, res) => {
     res.send(result);
   });
   
+});
+
+//Get All WorkoutData
+app.get("/getAllWorkoutData", (req, res) => {
+  var sql = `SELECT * FROM content`;
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
+  
+});
+
+//API to redirect to login or add content page
+app.get("/addContentRedirect", (req, res) => {
+  if(req.session.loggedin){
+    res.redirect('/drills/Add_workouts.html');
+  }
+  else res.redirect('/login/login-page.html');
+});
+
+//Check Mod access and redirect
+app.get("/moderateRedirect", (req, res) => {
+
+  if(req.session.loggedin) {
+    con.query(`SELECT * FROM mods WHERE email= "${req.session.username}";`, function (err, result) {
+      if (err) throw err;
+      if (result.length > 0) res.redirect('/drills/modtools.html');
+      else { 
+        res.send("You are not a moderator. Only users with moderator role can moderate content.");
+      }
+    });
+  }
+
+  else res.redirect('/login/login-page.html');
+  
+});
+
+
+//Get List of Users for Moderation
+app.get('/getUserList', (req, res) => {
+  var sql = `SELECT * FROM credentials`;
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
+})
+
+//Delete Users Using ModTools
+app.get('/deleteUser', (req, res) => {
+  var user = req.query.username;
+
+  var query = `DELETE FROM credentials WHERE email = "${user}";`
+
+  con.query(query, function (err, result) {
+    if (err) throw err;
+    console.log(`Deleted User ${user}`);
+  });
+
+
+  res.redirect('/drills/modtools.html');
+})
+
+//Get Posts from a particulat user
+app.get('/getUserPosts', (req, res) => {
+  var user = req.query.username;
+  var sql = `SELECT * FROM content WHERE email = "${user}"`;
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
+});
+
+//Delete a Post
+app.get('/deleteUserPosts', (req, res) => {
+  var post = req.query.postname;
+  var sql = `DELETE FROM content WHERE name = "${post}"`;
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log(result);
+  });
 });
 
 app.listen(port, () => {

@@ -9,18 +9,74 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-</head>
+  </head>
   <body>
     <!-- home css style -->
-    <link rel="stylesheet" href="login-page.css">
+    <link rel="stylesheet" href="/drills/drill_hiit.css">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  <nav class="navbar navbar-expand-md nav-menu navbar-light bg-light sticky-top" >
+    <script src = "../drills/drills_user.js"></script>
+    <script>
+        var loginDetails
+        fetch('http://localhost:8080/checkLogin')
+        .then((response) => response.json())
+        .then((data) => checkLoggedIn(data));
+        checkLoggedIn = (logincheck) => {
+            if(logincheck.isLoggedIn) {
+                getLoginDetails();
+            } else console.log("false");
+        }
+        getLoginDetails = () => {
+            fetch('http://localhost:8080/getLoginDetails')
+            .then((response) => response.json())
+            .then((logindata) => changeLoginBttn(logindata));
+            
+        }
+        changeLoginBttn = (loginData) => {
+            const bttn = document.getElementById('loginbttn');
+            var accBttn = document.createElement('li');
+            accBttn.className = "nav-item dropdown";
+            
+
+            var toggle = document.createElement('a');
+            toggle.setAttribute("data-toggle","dropdown");
+            toggle.innerText = loginData.username;
+
+            var listDiv = document.createElement('div');
+            listDiv.className = "dropdown-menu"
+            listDiv.ariaLabel = "acc_drop";
+
+            var accBttnList1 = document.createElement('a');
+            accBttnList1.className = "dropsown-item noline";
+            accBttnList1.href = "/LogOut";
+            accBttnList1.innerText = "Logout";
+
+            var accBttnList2 = document.createElement('a');
+            accBttnList2.className = "dropsown-item noline";
+            accBttnList2.href = "/login_forms.html";
+            accBttnList2.innerText = "Fitness Details";
+
+
+            var span = document.createElement('span');
+            span.className= "caret";
+
+            listDiv.appendChild(accBttnList1);
+            listDiv.appendChild(accBttnList2);
+            accBttn.appendChild(toggle);
+            accBttn.appendChild(span);
+            accBttn.appendChild(listDiv);
+
+            
+            bttn.replaceWith(accBttn);
+        }
+        
+    </script>
+    
+    <nav class="navbar navbar-expand-md nav-menu navbar-light bg-light sticky-top" >
     
     <a class="navbar-brand noline" href="/index.html"><img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding: 5px;"></a>
     
@@ -38,7 +94,7 @@
               <a class="nav-link " href="/workouts.html">   WORKOUTS </a>
           </li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
              <a class="nav-link dropdown-toggle " data-toggle="dropdown" data-target="#drills_drop" href="#"> 
              DRILLS
              <span class="caret"></span>
@@ -73,47 +129,41 @@
         </div>
           </li>
           
-         <li></li>
-     </ul>
-     <a href="/login/login-page.html" class="login-btn scrollto" style="text-decoration: none;">LOG IN</a>
+          <li></li>
+      </ul>
+      <a href="" class="login-btn scrollto" style="text-decoration: none;" id="loginbttn">LOG IN</a>
     </div>
   </nav>
-
-
-
-
-  <section class="Form mt-5">
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="col-lg-5 ">
-          <img src="/images/svg/login/fitness_tracker.svg" style="height: 500px;" class="img-fluid login-image" alt="">
-        </div>
-        <div class="col-lg-7 px-5 pt-5">
-          <img src="/images/fit-verse.png" alt="logo" style="width: 200px; padding-bottom: 20px;">
-          <h4>Log into your account</h4>
-          <form method="post", action = "/auth">
-            <div class="form-row">
-              <div class="col-lg-7">
-                <input type="email" placeholder="E-mail address" class="form-control mt-3 mb-1 p-4 " name = "username" name = "username">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-lg-7">
-                <input type="password" placeholder="Password" class="form-control mt-1 mb-4 p-4" name = "password" name = "password">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col-lg-7">
-                <button type="submit" class="btn2 mb-3">Login</button>
-              </div>
-            </div>
-            <p style="text-decoration-color: #FF4433;">Don't have an account?  <a href="sign-up.html">Register here </a></p>
-          </form>
+   <!--<div class = "drills-bg-image">-->
+  
+    <div class="container" id = "mainContainer">
+      <div class="row mt-3">
+        <div class="col-12">
+          <h1>Custom Drills</h1>
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="row mt-3" >
+        <div class="col-12">
+          <div class="card shadow mg-b-20 mg-lg-b-25">
+            <div class="card-header" style = "background-color: #FF4433;">
+                <div class="row">
+                  <div class="col-6">
+                      <a class="m-0 font-weight-bold text-white" href = '/addContentRedirect'>Add New</a>&nbsp;&nbsp;&nbsp;
+                      <a class="m-0 font-weight-bold text-white" href = '/moderateRedirect'>Moderate</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--</div>-->  
+  
+    </body>
+    </html>
 
 
-  </body>
-  </html>
+
+
+
